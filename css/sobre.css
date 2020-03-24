@@ -1,0 +1,69 @@
+.pagina-sobre p{
+    margin:20px 0;
+    padding: 0 45px;
+    line-height: 1.5;
+}
+
+.pagina-sobre figure{
+    background-color: #f2eded;
+    border: 1px solid #ccc;
+    text-align: center;
+    padding: 15px;
+    margin:30px; 
+}
+.pagina-sobre figure img{
+    width: 100%;
+    height: auto;
+}
+.pagina-sobre figcaption{
+    font-style: italic;
+    margin-top:10px;
+
+}
+.pagina-sobre #centro-distribuicao{
+    width:550px;
+    margin-left:auto;
+    margin-right: auto;
+}
+.pagina-sobre #familia-pelho{
+    float: right;
+    margin: 0 0 10px 10px;
+}
+
+.pagina-sobre h3{
+    font-size:20px;
+    border-bottom: 2px solid #333;
+    margin:30px 0;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+.pagina-sobre ul{
+    list-style: initial;
+    margin-left: 25px;
+    line-height: 1.5;
+}
+.pagina-sobre p ::first-line{
+    font-variant: small-caps;
+
+
+}
+.pagina-sobre p::first-letter{
+    font-weight: bold;
+}
+
+
+/*mobile*/
+@media(max-width:630px){
+    .pagina-sobre #centro-distribuicao{
+        width: 100%;
+
+    }
+    .pagina-sobre #familia-pelho{
+        float:none;
+        margin:0;
+    }
+    .pagina-sobre p{
+        padding: 0 15px;
+    }
+}

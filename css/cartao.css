@@ -1,0 +1,46 @@
+.pagina-cartao{
+    margin:20px;
+    padding: 0 45px;
+    line-height: 1.5;
+}
+    
+ .pagina-cartao .cartao img{
+    width: 300px;
+    height: auto;
+    float: right;
+    margin:0 0 15px 15px;
+
+    
+}
+.pagina-cartao p{
+    margin: 15px 0;
+    line-height: 1.5;
+    text-indent: 15px;
+    padding: 0 45px;
+}
+
+    
+    
+
+.pagina-cartao p:first-of-type::first-line{
+    font-variant: small-caps;
+}
+.pagina-cartao p:first-of-type::first-letter{
+    font-size:18px;
+    font-weight: bold;
+}
+
+@media(max-width:630px){
+    .pagina-cartao{
+        width: 100%;
+        
+    }
+    .pagina-cartao p{
+        padding: 0 15px;
+    }
+    .pagina-cartao .cartao img{
+        width: 100%;
+        margin:0;
+        float: none;
+    }
+}

@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css?family=Montez|Roboto:400,700,900&display=swap');
+
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size:16px;
+}
+
+.conteiner{
+    width: 940px;
+    margin: 0 auto;
+
+}
+.flex-conteiner{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+#topo{
+    position: relative;
+    margin-top:20px;
+    margin-bottom: 20px;
+
+}
+#topo .sacola{
+    position: absolute;
+    top:0;
+    right: 0;
+    width: 140px;
+    background-image: url(../img/sacola.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    padding-right: 35px;
+    padding-top: 8px;
+    text-align: right;
+    font-size:14px;
+}
+#topo .menu{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+}
+
+#topo .menu li{
+    display: inline;
+    margin-left:10px;
+}
+/*rodape*/
+#rodape{
+    background-image: url("../img/fundo-rodape.png");
+    padding: 20px 0;
+    margin-top:20px;
+}
+
+#rodape .social a{
+    width: 32px;
+    height: 32px;
+    display: block;
+
+}
+#rodape .social a span{
+    display:none;
+}
+#rodape .social a[href *= 'facebook.com']{
+    background-image: url('../img/facebook.png');
+
+}
+#rodape .social a[href *= 'twitter.com']{
+    background-image: url('../img/twitter.png');
+    
+}
+#rodape .social a[href *= 'google.com']{
+    background-image: url('../img/googleplus.png');
+}
+
+#rodape .social li{
+    display: inline-block;
+    margin-left: 10px;
+}
+#rodape .flex-conteiner{
+    align-items: center;
+    
+}
+
+.cabecalhos{
+    font-size:25px;
+    padding: 15px;
+    background:url('../img/sobre-background.jpg');
+    text-transform: uppercase;
+    font-weight: bold;
+}
+/*mobile (adaptação do topo e do rodape */
+@media(max-width:630px){
+    .conteiner{
+        width: 96%;
+    }
+    #topo h1{
+        text-align: center;
+    }
+    #topo .menu{
+        position:static;
+        text-align: center;
+        margin-top:15px;
+
+    }
+    #topo .menu li{
+        margin:8px;
+        display:inline-block;
+    }
+    #topo .sacola{
+        position:fixed;
+        top:initial;
+        bottom: 5px;
+        right: 5px;
+        text-indent: -9999px;
+        width: 60px;
+        height: 60px;
+        border-radius: 70px;
+        border: 2px solid blue;
+        text-align: initial;
+        background-color: white;
+        background-position: center center;
+        opacity: 0.6;
+        z-index: 10;
+        transition: .5s;
+    }
+    #topo .sacola:hover{
+        opacity: 1;
+    }
+    #rodape{
+        padding-bottom: 70px;
+    }
+}

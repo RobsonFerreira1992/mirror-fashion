@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>checkout Mirror Fashion</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <header class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">Otima escolha!</h1>
+            <p class="lead">
+                Obrigado por sua compra na Mirror Fashion !
+                Preencha seus dados para efetivar a compra.
+            </p>
+        </div>
+    </header>
+    <section class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-3">
+                    <div class="card-header">
+                        Sua compra
+                    </div>
+                    <div class="card-body">
+                        <img src="img/produtos/foto1-verde.png" alt="Fuzz Cartigan" class="img-thumbnail mb-3">
+                        <dl>
+                            <dt>Produto</dt>
+                            <dd>Fuzz Cartigan</dd>
+
+                            <dt>Cor</dt>
+                            <dd>verde</dd>
+
+                            <dt>Tamanho</dt>
+                            <dd>40</dd>
+
+                            <dt>Preços</dt>
+                            <dd id="preco">R$129,90</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                     <div class="card-body">
+                         <div class="form-group">
+                             <label for="qtd">Quantidade</label>
+                             <input type="number" id="qtd" min="1" max="90" value="1" class="form-control"/>
+                         </div>
+                         <div class="form-group">
+                             <label for="total">Total</label>
+                             <output id="total" class="form-control">
+                                 R$ 129,90
+                             </output>
+                         </div>
+                     </div>
+                </div>
+            </div>
+            <form class="col-md-8">
+                <div class="row">
+                    <fieldset class="col-md-6">
+                        <legend>Dados pessoais </legend>
+                        <div class="form-group">
+                            <label>Nome completo:</label>
+                            <input type="text" id="nome" class="form-control"/>
+                        </div>
+                           <div class="form-group">
+                               <label for="email">E-mail:</label>
+                               <input type="text" id="email" class="form-control"/>
+                           </div>
+                           <div class="form-group">
+                                <label for="cpf">CPF:</label>
+                                <input type="text" id="cpf" class="form-control" data.mask="999.999.999-99"/>
+                            </div>
+                            <div class="form-group custom-control custom-checkbox">
+                                    <input type="checkbox"  class="custom-control-input" id="news"  checked/>
+                                    <label class="custom-control-label" for="news">
+                                        Quero receber a newsletter da Mirror Fashion
+                                    </label>
+                                </div>
+                    </fieldset>
+                    <fieldset class="col-md-6">
+                        <legend>Cartão de credito</legend>
+                        <div class="form-group">
+                            <label for="numerocvv">Numero - CVV</label>
+                            <input  type="text" class="form-control" id="numerocvv" />
+                        </div>
+                        <div class="form-group">
+                            <label for="bandeira">Bandeira</label>
+                            <select id="bandeira" class="custom-select">
+                                <option value="master">MasterCard</option>
+                                <option value="visa">Visa</option>
+                                <option value="amex">AmericanExpress</option>
+                            </select>
+                        </div>
+                           <div class="form-group">
+                               <label for="validade">Validade</label>
+                               <input type="text" class="form-control"id="validade" data.mask="99/9999"/>
+                           </div>
+                        </fieldset>   
+                </div>
+                    <button type="submit" class="btn btn-primary">
+                        Confirmar pedido
+                    </button>
+                    <a href="produto.html" class="btn btn-danger">
+                        Cancelar pedido
+                    </a>
+            </form>
+        </div>
+    </section>
+</body>
+<script src="js/jquery.js"></script>
+<script src="js/inputmask-plugin.js"></script>
+<script src="js/total.js"></script>
+</html>

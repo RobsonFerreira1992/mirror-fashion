@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mirror Fashion | Produto</title>
+    <link rel="stylesheet" href="css/reset.css "/>
+    <link rel="stylesheet" href="css/geral.css "/>
+    <link rel="stylesheet" href="css/produto.css "/>
+</head>
+
+<body>
+    <!--cabecalho-->
+    <header id="topo" class="conteiner">
+        <h1>
+            <a href="index.html">
+                <img src="img/logo.png" alt="Logo Mirror Fashion" />
+            </a>
+        </h1>
+        
+      <p class="sacola">
+          Nenhum item na sua sacola de compras
+      </p>
+      <nav class="menu">
+          <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="produtos.html">Produto</a></li>
+              <li><a href="cartao-fidelidade.html">Cartão Fidelidade</a></li>
+              <li><a href="sobre.html">Sobre</a></li>
+              <li><a href="contato.html">Contato</a></li>
+
+          </ul>
+
+      </nav>
+
+    </header>
+    <!--fim do cabecalho-->
+
+    <!-- conteudo principal da página -->
+    <main class="conteiner">
+       <article class="pagina-produto">
+        <header class="cabecalhos">
+            <h2>produto</h2>
+
+        </header>
+        <div class="produto">
+            <h3>Fuzz Cardigan</h3>
+            <p>por apenas R$129,90</p>
+            <form action="checkout.html">
+                <fieldset class="cores">
+                    <legend>Escolha a cor:</legend>
+                    <input type="radio" name="cor" value="verde" id="verde" checked/>
+                    <label for="verde">
+                    <img src="img/produtos/foto1-verde.png" alt=""/>
+                    </label>
+
+                    <input type="radio" name="cor" value="rosa" id="rosa" checked/>
+                    <label for="rosa">
+                    <img src="img/produtos/foto1-rosa.png" alt=""/>
+                    </label>
+                    
+                    <input type="radio" name="cor" value="azul" id="azul" checked/>
+                    <label for="azul">
+                    <img src="img/produtos/foto1-azul.png" alt=""/>
+                    </label>
+                    
+                </fieldset>
+
+                <fieldset>
+                    <legend>Escolha o tamanho:</legend>
+                    <input type="range" min="36" max="42" step="2" value="42" name="tamanho" id="tamanho"/>
+                    <output for="tamanho">42</output> 
+                </fieldset>
+                <button class="comprar">
+                    Comprar
+                </button>
+            </form>
+        </div>
+        <div class="detalhes">
+            <h4>Detalhes do produto</h4>
+            <p>Esse é o melhor casaco de cardiga que você ja viu,Excelente material italiano
+                com estampa desenhada pelos artesaos da comunidade de Krotos nas ilhas gregas </p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>
+                            Caracteristicas
+                        </th>
+                        <th>Detalhes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Modelo</td>
+                        <td>Cartiga 7845</td>
+
+                    </tr>
+                    <tr>
+                        <td>material</td>
+                        <td>Algodao</td>
+                    </tr>
+                    <tr>
+                        <td>Cores</td>
+                        <td>Azul ,Rosa ,Verde</td>
+
+                    </tr>
+                    <tr>
+                        <td>Lavagem</td>
+                        <td>lavar a mão</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+       </article>
+
+    </main>
+    <!--fim do conteudo principal -->
+
+
+    <!--rodape site-->
+
+<footer id="rodape">
+     <div class="conteiner flex-conteiner">
+         <img src="img/logo-rodape.png" alt="Logo warrior fashion"/>
+         <nav class="social">
+             <ul>
+                 <li><a href="http://facebook.com/"><span>Facebook</span></a></li>
+                 <li><a href="http://twitter.com/"><span>Twitter</span></a></li>
+                 <li><a href="http://plus.google.com/"><span>Google+</span></a></li>
+             </ul>
+         </nav>
+     </div>
+
+</footer>
+
+
+    <!--fim do rodape-->
+    <script src="js/produto.js"></script>
+</body>
+
+</html>

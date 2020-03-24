@@ -1,0 +1,151 @@
+.busca,.menu-departamentos{
+    background-color: #dcdcdc;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 230px;
+}
+
+.busca h2,.busca form,.menu-departamentos h2{
+    padding: 10px;
+}
+.busca h2,.menu-departamentos h2{
+    font-size:16px;
+}
+.busca form{
+    padding-top: 0;
+}
+.busca form input[type=text]{
+    width:170px;
+}
+
+.busca button{
+    background-image: url(../img/busca.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: transparent; 
+    width: 20px;
+    height: 20px;
+    border:none;
+    text-indent: -99999px;
+
+}
+
+.menu-departamentos {
+    margin-top: 10px;
+
+}
+.menu-departamentos li ul{
+    margin-top:5px;
+    display:none;
+}
+.menu-departamentos ul ul li{
+    background-color: #dcdcdc;
+}
+.menu-departamentos li li a::before{
+    content:'';
+}
+.menu-departamentos li{
+    background-color: white;
+    margin-bottom:1px;
+    padding: 5px 10px;
+}
+.menu-departamentos a{
+    text-decoration: none;
+    color:#333;
+}
+.banner-destaque{
+    width: 700px;
+}
+.banner-destaque img{
+    width: 100%;
+}
+
+/*paineis */
+
+.paineis{
+    margin-top: 10px;
+
+}
+.painel{
+    width: 466px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.painel h2{
+    font-size:24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    text-shadow: 3px 3px 2px #fff;
+    
+}
+
+.painel h2::before{
+    content:'\2756';
+    padding-right: 5px;
+    opacity: .4;/*opacity= sempre um valor entre 0 e 1 onde 0 = totalmente transparente  e 1 =totalmente opaco */
+}
+.painel li{
+    width:140px;
+    margin:2px;
+    padding-bottom: 10px;
+    transition: .5s;
+}
+.painel li:hover{
+    background-color:#fff;
+    box-shadow:0 0 5px #333;
+    z-index: 2;
+    border-radius: 10px;
+    overflow: hidden;
+    transform:  scale(1.2) rotate(5deg);
+    
+
+}
+.painel li:nth-child(odd):hover{
+    transform: scale(1.2) rotate(-5deg);
+
+
+}
+
+
+.painel img{
+    width: 100%;
+
+}
+.painel figcaption{
+    padding: 5px 10px;
+    text-align: center;
+    line-height: 1.5;
+}
+.painel a{
+    color:#333;
+    font-size:14px;
+    text-decoration: none;
+}
+.novidades{
+    background-color: #f5dcdc;
+
+}
+.mais-vendidos{
+    background-color: #dcdcf5;
+}
+
+/*mobile*/
+
+@media (max-width:630px){
+    .busca,
+    .departamentos-busca,
+    .menu-departamentos,
+    .painel,
+    .banner-destaque{
+        width: 100%;
+        margin-right: 0;
+    }
+    .busca,
+    .menu-departamentos{
+        text-align: center;
+    }
+    .painel li{
+        width: 30%;
+    }
+}
